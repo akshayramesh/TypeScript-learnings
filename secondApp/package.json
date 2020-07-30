@@ -1,0 +1,14 @@
+{
+    "name": "secondapp",
+    "version": "1.0.0",
+    "description": "sample ts app",
+    "main": "script.js",
+    "scripts": {
+        "start": "lite-server"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lite-server": "^2.5.4"
+    }
+}
