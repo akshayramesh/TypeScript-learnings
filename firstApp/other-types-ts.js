@@ -18,3 +18,11 @@ var combinedStringAges = combineWithType('20', '30', 'as-number');
 console.log(combinedStringAges);
 var combinedStringNames = combineWithType("Chandler", " Bing", 'as-text');
 console.log(combinedStringNames);
+function combineWithTypeAlias(input1, input2, conversionType) {
+    if (typeof input1 === "number" && typeof input2 === "number" || conversionType === 'as-number') {
+        return +input1 + +input2;
+    }
+    else {
+        return input1.toString() + input2.toString();
+    }
+}

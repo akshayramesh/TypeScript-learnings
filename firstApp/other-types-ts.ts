@@ -29,4 +29,22 @@ console.log(combinedStringAges);
 const combinedStringNames = combineWithType("Chandler", " Bing", 'as-text');
 console.log(combinedStringNames);
 
-//091415
+
+//type aliases
+type combinableType = number | string
+type conversionDescriptorType = "as-number" | "as-text"
+
+function combineWithTypeAlias(
+  input1: combinableType,
+  input2: combinableType,
+  conversionType: conversionDescriptorType
+) {
+    if(typeof input1 === "number" && typeof input2 === "number" || conversionType === 'as-number'){
+        return +input1 + +input2
+    }else {
+        return input1.toString() + input2.toString()
+    }
+  
+}
+
+
